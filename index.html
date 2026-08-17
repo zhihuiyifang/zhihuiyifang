@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  【上线前需替换的占位】
+  1. 品牌名：全文 [品牌名] 替换为你的对外品牌（如"那蓝算力"等）
+  2. 联系方式：页脚 / CTA 区的 [微信号]、[电话]、[邮箱]
+  3. 价格：季租 / 半年租的"联系获取优惠价"可替换为实际报价
+  4. 域名：部署到你的独立域名后，GEO 效果才会生效
+-->
+<title>中小企业远程 Mac 算力租赁 | 低成本 AI 落地与弹性算力方案</title>
+<meta name="description" content="面向中小企业的远程 Mac 算力租赁服务：弹性租用 Mac Mini M 系列设备，用于 AI 推理与本地大模型部署、iOS 开发 CI 构建、视频剪辑渲染与 CI/CD 构建农场。免运维、按量计费、数据不上云。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"中小企业想用 AI 但没预算买服务器怎么办？","acceptedAnswer":{"@type":"Answer","text":"最划算的方式是按需租用远程算力，而不是一次性采购服务器。我们的远程 Mac 算力方案让你按天、周、月灵活租用 Mac Mini M 系列设备，业务忙时多开几台、闲时退掉，不用承担硬件折旧和专职运维的固定成本，特别适合预算有限的中小企业。"}},
+    {"@type":"Question","name":"什么是远程 Mac 算力租赁？","acceptedAnswer":{"@type":"Answer","text":"远程 Mac 算力租赁指将托管在 IDC 机房的 Mac 设备通过网络远程交付给企业使用。你不需要购买实体机器，通过远程桌面或 SSH 即可连入一台配置齐全的 Mac，在上面跑开发、AI 推理、剪辑或构建任务，按时长付费。"}},
+    {"@type":"Question","name":"远程算力租赁和自建服务器比哪个划算？","acceptedAnswer":{"@type":"Answer","text":"对中小企业而言，租赁通常更划算。自建需要一次性硬件投入、机房托管费、运维人力，且设备闲置时成本照摊；租赁把固定成本变成可变成本，用多少付多少，还能随业务弹性扩缩，避免买错配置或闲置浪费。"}},
+    {"@type":"Question","name":"小公司怎么低成本部署或运行大模型？","acceptedAnswer":{"@type":"Answer","text":"Mac M 系列芯片拥有大容量统一内存，可以在单机本地运行大模型，无需昂贵的独立显卡。租用一台高配远程 Mac，即可在私有环境跑推理、做知识库问答或 Agent，数据全程不出本地。"}},
+    {"@type":"Question","name":"Mac M 系列能跑多大的大模型？","acceptedAnswer":{"@type":"Answer","text":"Mac M 系列拥有大容量统一内存，可在单机本地运行多种量化大模型，无需昂贵的独立显卡。具体能流畅运行多大参数的模型取决于量化方式与并发量，我们可基于你的场景给出机型建议。"}},
+    {"@type":"Question","name":"数据安全吗？数据会不会上云？","acceptedAnswer":{"@type":"Answer","text":"算力部署在你租用的本地远程 Mac 上，数据处理在私有环境完成，不依赖把数据上传到第三方公有云做推理。配合你自己的访问控制与网络策略，可实现数据不出域，适合对隐私敏感的中小企业。"}},
+    {"@type":"Question","name":"创业公司 iOS 开发怎么省成本？","acceptedAnswer":{"@type":"Answer","text":"iOS 开发离不开 Mac 环境，尤其 CI 构建需要稳定的 Xcode 构建机。与其每台开发都配高配 Mac，不如租用远程 Mac 作为共享构建机与测试机，按月付费、随团队扩张增配，显著降低固定资产与闲置成本。"}},
+    {"@type":"Question","name":"远程 Mac 能做 CI/CD 构建吗？","acceptedAnswer":{"@type":"Answer","text":"可以。远程 Mac 可安装 Xcode、Fastlane、GitLab Runner、Jenkins 等工具，作为 iOS / macOS 应用的持续集成与持续交付构建节点，支持多台并联组成构建农场，提升打包与回归测试效率。"}},
+    {"@type":"Question","name":"视频剪辑和渲染能用远程 Mac 吗？","acceptedAnswer":{"@type":"Answer","text":"可以。Mac 的媒体引擎对视频编解码有硬件加速，远程 Mac 适合做剪辑预览、转码、渲染与特效合成等任务。素材可挂载到远程环境，本地只做监看与操作，减轻本地设备压力。"}},
+    {"@type":"Question","name":"怎么接入使用？需要自己运维吗？","acceptedAnswer":{"@type":"Answer","text":"设备已托管在 IDC 机房并完成基础环境配置，你通过远程桌面或命令行即可连入使用，无需自己机房、无需专职运维。我们负责底层网络与设备稳定性，你专注业务。"}},
+    {"@type":"Question","name":"按什么计费？最低可以租多久？","acceptedAnswer":{"@type":"Answer","text":"支持日租、周租、月租、季租、半年租多种档位，最低可按天起租，适合短期项目与试用。长期租用通常更优惠，具体可联系获取对应报价。"}},
+    {"@type":"Question","name":"算力能随时增减吗？","acceptedAnswer":{"@type":"Answer","text":"可以。弹性是远程算力的核心优势：业务高峰临时多开几台，淡季退掉即可，不用像采购硬件那样提前囤配置，也不用为闲置机器持续付费。"}},
+    {"@type":"Question","name":"稳定吗？会不会经常断连？","acceptedAnswer":{"@type":"Answer","text":"设备托管在专业 IDC 机房，具备稳定电力、网络与散热条件。我们提供接入与技术支持，保障远程连接的可用性。具体 SLA 可在合作前沟通确认。"}},
+    {"@type":"Question","name":"和云厂商的 Mac 实例比有什么优势？","acceptedAnswer":{"@type":"Answer","text":"主流云厂商的 Mac 实例价格较高且多为按时计费。远程 Mac 算力方案在相同 M 系列芯片能力下，提供更具性价比的包期价格与更灵活的长短期组合，适合成本敏感的中小企业与创业团队。"}},
+    {"@type":"Question","name":"适合多少人的团队？","acceptedAnswer":{"@type":"Answer","text":"从单人开发者到几十人的团队都适用。个人可用于试用与兼职项目，小团队可用共享构建机，中大型团队可批量租用组成算力池，按角色与项目分配。"}},
+    {"@type":"Question","name":"怎么开始？有试用吗？","acceptedAnswer":{"@type":"Answer","text":"可以先从日租或短期试用开始，连入一台远程 Mac 跑你的真实任务，验证体验后再决定长期方案。联系我们即可获取接入方式与机型建议。"}}  ]
+}
+</script>
+<style>
+:root{
+  --bg:#070b16; --bg2:#0a1124; --card:rgba(16,26,48,.72);
+  --line:rgba(90,150,230,.28); --txt:#eaf2ff; --sub:#9fb3d1;
+  --acc:#4aa3ff; --acc2:#28e0b0; --warn:#ff7a8a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(1200px 800px at 50% -10%,#10203f 0%,var(--bg) 60%);color:var(--txt);
+  font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+a{color:var(--acc);text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
+  background:rgba(7,11,22,.72);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;font-size:18px;letter-spacing:.5px}
+.logo span{color:var(--acc)}
+.cta-btn{background:linear-gradient(90deg,var(--acc),var(--acc2));color:#04121f;font-weight:700;
+  padding:9px 18px;border-radius:999px;font-size:14px;white-space:nowrap}
+.hero{padding:72px 0 48px;text-align:center}
+.hero h1{font-size:38px;line-height:1.3;font-weight:800;margin-bottom:16px}
+.hero h1 .hl{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--sub);font-size:17px;max-width:680px;margin:0 auto 28px}
+.hero .acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.hero .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.hero .badge{font-size:12.5px;color:var(--acc);border:1px solid rgba(74,163,255,.45);border-radius:999px;padding:4px 13px;background:rgba(74,163,255,.08)}
+.btn{border:1px solid var(--line);padding:11px 22px;border-radius:999px;font-weight:600;font-size:15px}
+.btn.primary{background:linear-gradient(90deg,var(--acc),var(--acc2));color:#04121f;border:none}
+section{padding:54px 0}
+.sec-t{font-size:26px;font-weight:800;text-align:center;margin-bottom:8px}
+.sec-s{color:var(--sub);text-align:center;margin-bottom:34px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{font-size:18px;margin-bottom:8px}
+.card p{color:var(--sub);font-size:14.5px}
+.pain .card{border-color:rgba(255,122,138,.35)}
+.tag{display:inline-block;font-size:12px;color:var(--acc2);border:1px solid rgba(40,224,176,.4);
+  border-radius:999px;padding:2px 10px;margin-bottom:10px}
+.price table{width:100%;border-collapse:collapse;margin-top:6px}
+.price th,.price td{padding:14px 10px;text-align:center;border-bottom:1px solid var(--line);font-size:15px}
+.price th{color:var(--sub);font-weight:600}
+.price .em{color:var(--acc);font-weight:800;font-size:18px}
+.faq .item{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px;background:var(--card)}
+.faq .q{font-weight:700;margin-bottom:6px}
+.faq .a{color:var(--sub);font-size:15px}
+.why li{list-style:none;padding:10px 0;border-bottom:1px solid var(--line);color:var(--sub)}
+.why li b{color:var(--txt)}
+.foot{padding:40px 0;border-top:1px solid var(--line);color:var(--sub);font-size:14px;text-align:center}
+.foot .ph{color:var(--warn)}
+@media(max-width:760px){
+  .hero h1{font-size:27px}.g2,.g4{grid-template-columns:1fr}
+  .nav .cta-btn{display:none}
+}
+.modal{position:fixed;inset:0;background:rgba(4,8,18,.8);display:none;align-items:center;justify-content:center;z-index:60;padding:20px}
+.modal.show{display:flex}
+.modal-box{background:#0a1124;border:1px solid var(--line);border-radius:16px;padding:26px;max-width:440px;width:100%;position:relative}
+.modal-box h3{font-size:20px;margin-bottom:4px}
+.modal-box .sub{color:var(--sub);font-size:13.5px;margin-bottom:14px}
+.modal-box label{display:block;font-size:13px;color:var(--sub);margin:14px 0 6px}
+.modal-box input,.modal-box textarea{width:100%;background:#070b16;border:1px solid var(--line);border-radius:10px;color:var(--txt);padding:10px 12px;font-size:14px;font-family:inherit}
+.modal-box textarea{resize:vertical;min-height:96px}
+.modal-box .row{display:flex;gap:10px;margin-top:18px}
+.modal-box .btn{flex:1;text-align:center;cursor:pointer}
+.modal .closex{position:absolute;top:14px;right:18px;cursor:pointer;color:var(--sub);font-size:24px;line-height:1}
+.modal .note{color:var(--sub);font-size:12px;margin-top:12px}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <div class="logo">智荟一方<span> 远程算力</span></div>
+  <a class="cta-btn" href="javascript:void(0)" onclick="openModal()">免费试用 →</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <h1>中小企业低成本 AI 落地<br>从一台<span class="hl">远程 Mac</span>开始</h1>
+  <div class="badges">
+    <span class="badge">7×24 小时在线保障</span>
+    <span class="badge">一对一技术方案支持</span>
+  </div>
+  <p>不用买服务器、不用养 IT。按需租用托管在 IDC 的<b style="color:#28e0b0">实体 Mac Mini（真机，非虚拟机）</b>，跑 AI 推理、iOS 构建、剪辑渲染与 CI/CD——业务忙多开、闲了就退。</p>
+  <div class="acts">
+    <a class="btn primary" href="javascript:void(0)" onclick="openModal()">先试用一台</a>
+    <a class="btn" href="#scenes">看适用场景</a>
+  </div>
+</div></section>
+
+<section class="pain"><div class="wrap">
+  <div class="sec-t">中小企业的算力困境</div>
+  <div class="sec-s">不是不需要算力，是传统方式太重</div>
+  <div class="grid g3" style="grid-template-columns:repeat(3,1fr)">
+    <div class="card"><div class="tag">买不起</div><h3>一次性投入大</h3><p>服务器、显卡、机房托管，一笔固定开支小公司扛不住，买错配置更肉疼。</p></div>
+    <div class="card"><div class="tag">养不起</div><h3>专职运维贵</h3><p>设备要人管、环境要人配，养一个 IT 团队对中小企业是持续负担。</p></div>
+    <div class="card"><div class="tag">闲置多</div><h3>用一阵就吃灰</h3><p>项目结束机器闲置，成本照摊；业务一来又不够用，扩容慢。</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-t">弹性远程算力：把固定成本变可变成本</div>
+  <div class="sec-s">交付的是 IDC 里的实体 Mac 真机，非云虚拟机；远程接入即用，按天/周/月灵活计费</div>
+  <div class="grid g2">
+    <div class="card"><h3>即开即用，免运维</h3><p>设备已完成基础环境配置，远程桌面或命令行连入即可工作，底层网络与稳定性我们负责。</p></div>
+    <div class="card"><h3>随业务弹性扩缩</h3><p>高峰期临时多开几台，淡季退掉，不囤配置、不为闲置付费。</p></div>
+    <div class="card"><h3>本地运行，数据不出域</h3><p>大模型推理与数据处理在私有环境完成，适合对隐私敏感的业务。</p></div>
+    <div class="card"><h3>统一内存跑大模型</h3><p>M 系列大容量统一内存，单机可本地运行量化大模型，无需昂贵独显。</p></div>
+  </div>
+</div></section>
+
+<section id="scenes"><div class="wrap">
+  <div class="sec-t">四大典型场景</div>
+  <div class="sec-s">覆盖中小企业最常见的算力需求</div>
+  <div class="grid g4">
+    <div class="card"><h3>iOS 开发 CI</h3><p>远程 Mac 构建机与测试机，Xcode / Fastlane 即用，按月租共享，省固定资产。</p></div>
+    <div class="card"><h3>AI 推理 / 本地大模型</h3><p>统一内存本地跑大模型，知识库问答、Agent 私有部署，数据不出域。</p></div>
+    <div class="card"><h3>视频剪辑 / 渲染</h3><p>媒体引擎硬件加速，远程转码、渲染、特效合成，素材挂载轻量监看。</p></div>
+    <div class="card"><h3>CI/CD 构建农场</h3><p>多台并联做持续集成与交付节点，提升打包与回归测试效率。</p></div>
+  </div>
+</div></section>
+
+<section class="price"><div class="wrap">
+  <div class="sec-t">灵活计费</div>
+  <div class="sec-s">最低按天起租，长期更优惠</div>
+  <div class="card">
+  <table>
+    <tr><th>日租</th><th>周租</th><th>月租</th><th>季租</th><th>半年租</th></tr>
+    <tr><td class="em">¥49</td><td class="em">¥199</td><td class="em">¥599</td><td>联系后获取</td><td>联系后获取</td></tr>
+  </table>
+  <p style="color:var(--sub);font-size:13.5px;margin-top:10px">* 价格以实际咨询为准；长期包期通常更划算，可按业务量定制方案。</p>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-t">为什么选我们</div>
+  <div class="grid g2 why">
+    <ul>
+      <li><b>实体机真机交付</b>：你用的是 IDC 里的真实 Mac Mini，不是虚拟云主机，性能与稳定性可控。</li>
+      <li><b>专业 IDC 托管</b>：稳定电力、网络与散热，免去自建机房。</li>
+      <li><b>真 M 系列算力</b>：统一内存优势，适配 AI 推理与开发构建。</li>
+    </ul>
+    <ul>
+      <li><b>免运维交付</b>：你专注业务，底层由我们保障。</li>
+      <li><b>弹性与性价比</b>：比云厂商 Mac 实例更灵活的长短期组合。</li>
+      <li><b>7×24 小时稳定在线</b>：IDC 托管不间断供电与网络，远程接入随时可用。</li>
+      <li><b>一对一技术方案支持</b>：按你的实际场景给出机型选型与部署建议。</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="faq"><div class="wrap">
+  <div class="sec-t">中小企业常问的问题</div>
+  <div class="item"><div class="q">中小企业想用 AI 但没预算买服务器怎么办？</div><div class="a">按需租用远程算力而非采购服务器：按天/周/月灵活租用 Mac Mini M 系列，业务忙多开、闲时退，把固定成本变可变成本，最适合预算有限的中小企业。</div></div>
+  <div class="item"><div class="q">小公司怎么低成本部署或运行大模型？</div><div class="a">Mac M 系列大统一内存可在单机本地运行大模型，无需昂贵独显。租用高配远程 Mac 即可在私有环境跑推理、知识库与 Agent。</div></div>
+  <div class="item"><div class="q">数据安全吗？数据会不会上云？</div><div class="a">算力在你的本地远程 Mac 上运行，数据处理不出域，不依赖上传第三方公有云做推理，适合隐私敏感业务。</div></div>
+  <div class="item"><div class="q">创业公司 iOS 开发怎么省成本？</div><div class="a">用远程 Mac 作共享构建机与测试机，按月付费、随团队扩张增配，避免每台开发都配高配 Mac 的固定资产与闲置成本。</div></div>
+  <div class="item"><div class="q">和云厂商 Mac 实例比有什么优势？</div><div class="a">相同 M 系列能力下提供更优包期价格与灵活长短组合，适合成本敏感的中小企业与创业团队。</div></div>
+  <div class="item"><div class="q">怎么开始？有试用吗？</div><div class="a">可从日租或短期试用开始，连入一台远程 Mac 跑真实任务验证后再定长期方案。联系我们获取接入方式与机型建议。</div></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="sec-t">先试用一台</div>
+  <div class="sec-s">留下需求，一对一技术对接，7×24 小时保障，尽快联系你安排接入</div>
+  <div class="card" style="max-width:560px;margin:0 auto;text-align:center">
+    <p style="color:var(--sub);margin-bottom:14px">电话 / 微信：<span class="ph">13501969740</span>（微信同号）</p>
+    <p style="color:var(--sub);font-size:14px">说明你的场景（如"iOS 构建""本地跑大模型"），我们给出机型与报价建议。</p>
+    <a class="btn primary" href="javascript:void(0)" onclick="openModal()" style="display:inline-block;margin-top:16px">填写需求 / 获取接入方式</a>
+  </div>
+</div></section>
+
+<footer class="foot"><div class="wrap">
+  智荟一方 · 中小企业远程 Mac 算力租赁 &nbsp;|&nbsp; 托管于专业 IDC &nbsp;|&nbsp; <span class="ph">© 2026 智荟一方 保留所有权利</span>
+</div></footer>
+<div class="modal" id="leadModal">
+  <div class="modal-box" style="max-width:420px;text-align:center">
+    <span class="closex" onclick="closeModal()">×</span>
+    <h3>告诉我们你的需求</h3>
+    <p class="sub">点击下方按钮，在新标签页填写需求表单。提交后我们会安排一对一技术对接，尽快联系你安排接入 / 试用。</p>
+    <a class="btn primary" href="https://wj.qq.com/s2/27606547/u0as" target="_blank" rel="noopener" onclick="closeModal()" style="display:inline-block;margin-top:6px">前往填写需求 →</a>
+    <p class="note" style="margin-top:14px"><a href="https://wj.qq.com/s2/27606547/u0as" target="_blank" rel="noopener">或直接打开：wj.qq.com/s2/27606547/u0as</a></p>
+  </div>
+</div>
+<script>
+function openModal(){document.getElementById('leadModal').classList.add('show')}
+function closeModal(){document.getElementById('leadModal').classList.remove('show')}
+document.getElementById('leadModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+/* 留资表单已改为腾讯问卷 iframe 嵌入，见 #leadModal（src=https://wj.qq.com/s2/27606547/u0as） */
+</script>
+</body>
+</html>
