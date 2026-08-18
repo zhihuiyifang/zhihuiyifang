@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zhihuiyifang.github.io/zhihuiyifang/sitemap.xml
